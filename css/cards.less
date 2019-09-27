@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.px2rem(@name, @px) {
+    @{name}: @px / 75 * 1rem;
+}
+
+.px2px(@name, @px) {
+    @{name}: round(@px / 2) * 1px;
+  [data-dpr="2"] & {
+      @{name}: @px * 1px;
+  }
+  // for mx3
+  [data-dpr="2.5"] & {
+      @{name}: round(@px * 2.5 / 2) * 1px;
+  }
+  // for 小米note
+  [data-dpr="2.75"] & {
+      @{name}: round(@px * 2.75 / 2) * 1px;
+  }
+  [data-dpr="3"] & {
+      @{name}: round(@px / 2 * 3) * 1px
+  }
+  // for 三星note4
+  [data-dpr="4"] & {
+      @{name}: @px * 2px;
+  }
+}
+
+html,
+body {
+    height: 100%;
+    background: #f6f6f6;
+}
+
+html li,
+body li {
+    list-style: none;
+}
+
+.marginleft{
+    .px2rem(margin-left,10);
+   
+}
+.marginright{
+    .px2rem(margin-right,10);
+   
+}
+
+.absolute{
+    position: absolute;
+    
+}
+.relative{
+    position: relative;
+}
+
+.center{
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+.container{
+    background: #f6f6f6;
+    ul{ 
+        background: #ffffff;
+        .px2rem(width,710);
+        margin: 0 auto;
+        li{ 
+            .px2rem(height,121);
+            .px2rem(font-size,36);
+            color: #656565;
+            display: flex;
+            align-items: center;
+            margin: 0;
+            border-bottom: 1px solid #f6f6f6;
+            span:nth-child(1){
+                display: inline-block;
+                .px2rem(width, 53);
+                .px2rem(margin-right,30);
+                .px2rem(margin-top,10);
+                white-space:nowrap;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            span:nth-child(2){
+                .px2rem(width, 150);
+                .px2rem(margin-right,30)
+              
+            }
+            span:nth-child(3){
+                .px2rem(margin-right,80)
+            }
+            .freeCard{
+                color: #ff5a01;
+            }
+            .payCard{
+                color: #ffb706;
+            }
+        }
+    }
+    .img-box{
+        p{
+            
+            margin: auto;
+            color: #656565;
+            .px2rem(font-size,36)
+        }
+    }
+}
+body{
+    background: #f6f6f6 !important;
+}

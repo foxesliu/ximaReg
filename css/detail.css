@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  background: #ebebeb;
+}
+html li,
+body li {
+  list-style: none;
+}
+.marginleft {
+  margin-left: 0.13333333rem;
+}
+.marginright {
+  margin-right: 0.13333333rem;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.center {
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+.container .myInfo {
+  height: 5.66666667rem;
+  background: url(../images/bgbig2.png) no-repeat;
+  background-size: 100%;
+  display: flex;
+}
+.container .myInfo .img-box {
+  width: 1.17333333rem;
+  height: 1.17333333rem;
+  border-width: 0.06666667rem;
+  margin-left: 0.25333333rem;
+  margin-top: 0.52rem;
+  border-radius: 50%;
+  box-shadow: 0px 0.0533rem 0.09333rem 0px rgba(145, 145, 145, 0.5);
+  border: solid 0.02666rem #e6e6e6;
+  overflow: hidden;
+}
+.container .myInfo .img-box img {
+  width: 100%;
+}
+.container .myInfo .userInfo {
+  margin-top: 0.72rem;
+  margin-left: 0.25333333rem;
+}
+.container .myInfo .userInfo li span {
+  display: inline-block;
+}
+.container .myInfo .userInfo li span:nth-child(1) {
+  width: 2.8rem;
+  height: 0.93333333rem;
+  line-height: 0.93333333rem;
+  color: #969696;
+  text-align: right;
+}
+.container .linkMan-box {
+  background: url(../images/bgerweima.png) no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 9.33333333rem;
+  padding-top: 0.93333333rem;
+}
+.container .linkMan-box .linkManMa {
+  width: 7.24rem;
+  height: 7.24rem;
+  background: url(../images/yuan.png) no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+  padding-top: 1.53333333rem;
+  box-sizing: border-box;
+}
+.container .linkMan-box .linkManMa img {
+  display: block;
+  width: 4.14666667rem;
+  margin: 0 auto;
+}
+.container .linkMan-box .linkManMa p {
+  text-align: center;
+  color: #424242;
+}
+.container .linkMan-box a {
+  display: block;
+  width: 1.4rem;
+  margin: 0 auto;
+  color: #9b9b9b;
+  font-size: 0.32rem;
+  text-decoration: underline !important;
+  text-decoration: #9b9b9b;
+}

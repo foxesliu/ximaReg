@@ -1,0 +1,125 @@
+.px2rem(@name, @px) {
+    @{name}: @px / 75 * 1rem;
+}
+
+.px2px(@name, @px) {
+    @{name}: round(@px / 2) * 1px;
+  [data-dpr="2"] & {
+      @{name}: @px * 1px;
+  }
+  // for mx3
+  [data-dpr="2.5"] & {
+      @{name}: round(@px * 2.5 / 2) * 1px;
+  }
+  // for 小米note
+  [data-dpr="2.75"] & {
+      @{name}: round(@px * 2.75 / 2) * 1px;
+  }
+  [data-dpr="3"] & {
+      @{name}: round(@px / 2 * 3) * 1px
+  }
+  // for 三星note4
+  [data-dpr="4"] & {
+      @{name}: @px * 2px;
+  }
+}
+
+.myInfo{
+    .px2rem(height, 112);
+    display: flex;
+    box-shadow: 0px 0px 0.26667rem 0px 
+        rgba(154, 154, 154, 0.5);
+    .px2rem(padding-left,19);
+    .px2rem(padding-right,19);
+    background: url(../images/bgsmall.png) no-repeat;
+    background-size: 100%;
+    justify-content: space-between;
+    align-items: center;
+    .img-box{
+        .px2rem(width, 88);
+        .px2rem(height, 88);
+        .px2rem(border-width,5);
+        .px2rem(margin-right, 28);
+        border-radius: 50%;
+        
+	    box-shadow: 0px 0.0533rem 0.09333rem 0px 
+        rgba(145, 145, 145, 0.5);
+        border: solid 0.02666rem #e6e6e6;
+        overflow: hidden;
+        .px2rem(box-shadow,4);
+        img{
+            width: 100%;
+        }
+    };
+    .name-box{
+        .px2rem(width, 440);
+        p:nth-child(1){
+            .px2rem(line-height, 45)
+        }
+        p:nth-child(2){
+            .px2rem(line-height, 33)
+        }
+    }
+    .btnCourse{
+        .px2rem(width, 156);
+        .px2rem(height, 60);
+        .px2rem(line-height, 60);
+        .px2rem(border-radius,41.5);
+        text-align: center;
+        color: #ffffff;
+        background-image: linear-gradient(90deg, 
+		#ff6a6a 0%, 
+		#ff9e63 100%);
+    }
+}
+.fiexQuit-box {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    .bg-box{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #000000;
+        opacity: 0.8;
+    }
+    .quit-box{
+        position: absolute;
+        .px2rem(top, 352);
+        .px2rem(left,43);
+        .px2rem(width,664);
+        .px2rem(height,330);
+        .px2rem(border-radius,18);
+        overflow: hidden;
+        background: #ffffff;
+        z-index: 9999;
+        .quitText{
+            .px2rem(line-height, 228);
+            .px2rem(font-size,48);
+            text-align: center;
+            color: #555555;
+        }
+        .isQuit{
+            .px2rem(height, 102);
+            background: #efefef;
+            .px2rem(font-size,32);
+            display: flex;
+            span{
+                display: inline-block;
+                width: 50%;
+                text-align: center;
+                .px2rem(line-height, 102);
+                box-sizing: border-box;              
+            }
+            span:nth-child(1){
+                border-right: 1px solid #cecece;
+            }
+            span:hover{
+                color: #ff7169;
+                background-color: #d8d8d8;
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.myInfo {
+  height: 1.49333333rem;
+  display: flex;
+  box-shadow: 0px 0px 0.26667rem 0px rgba(154, 154, 154, 0.5);
+  padding-left: 0.25333333rem;
+  padding-right: 0.25333333rem;
+  background: url(../images/bgsmall.png) no-repeat;
+  background-size: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.myInfo .img-box {
+  width: 1.17333333rem;
+  height: 1.17333333rem;
+  border-width: 0.06666667rem;
+  margin-right: 0.37333333rem;
+  border-radius: 50%;
+  box-shadow: 0px 0.0533rem 0.09333rem 0px rgba(145, 145, 145, 0.5);
+  border: solid 0.02666rem #e6e6e6;
+  overflow: hidden;
+  box-shadow: 0.05333333rem;
+}
+.myInfo .img-box img {
+  width: 100%;
+}
+.myInfo .name-box {
+  width: 5.86666667rem;
+}
+.myInfo .name-box p:nth-child(1) {
+  line-height: 0.6rem;
+}
+.myInfo .name-box p:nth-child(2) {
+  line-height: 0.44rem;
+}
+.myInfo .btnCourse {
+  width: 2.08rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  border-radius: 0.55333333rem;
+  text-align: center;
+  color: #ffffff;
+  background-image: linear-gradient(90deg, #ff6a6a 0%, #ff9e63 100%);
+}
+.fiexQuit-box {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.fiexQuit-box .bg-box {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0.8;
+}
+.fiexQuit-box .quit-box {
+  position: absolute;
+  top: 4.69333333rem;
+  left: 0.57333333rem;
+  width: 8.85333333rem;
+  height: 4.4rem;
+  border-radius: 0.24rem;
+  overflow: hidden;
+  background: #ffffff;
+  z-index: 9999;
+}
+.fiexQuit-box .quit-box .quitText {
+  line-height: 3.04rem;
+  font-size: 0.64rem;
+  text-align: center;
+  color: #555555;
+}
+.fiexQuit-box .quit-box .isQuit {
+  height: 1.36rem;
+  background: #efefef;
+  font-size: 0.42666667rem;
+  display: flex;
+}
+.fiexQuit-box .quit-box .isQuit span {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  line-height: 1.36rem;
+  box-sizing: border-box;
+}
+.fiexQuit-box .quit-box .isQuit span:nth-child(1) {
+  border-right: 1px solid #cecece;
+}
+.fiexQuit-box .quit-box .isQuit span:hover {
+  color: #ff7169;
+  background-color: #d8d8d8;
+}

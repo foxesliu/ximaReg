@@ -1,0 +1,13 @@
+
+.vjs-big-play-button {
+    display: none!important;
+}
+#video-cover{
+    position: absolute;
+    left:0;
+    top:0;
+    z-index:1;
+    display:none;
+    width: 100%;
+
+}

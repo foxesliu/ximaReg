@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  background: #f6f6f6;
+}
+html li,
+body li {
+  list-style: none;
+}
+.marginleft {
+  margin-left: 0.13333333rem;
+}
+.marginright {
+  margin-right: 0.13333333rem;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.center {
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+.container {
+  background: #f6f6f6;
+}
+.container ul {
+  background: #ffffff;
+  width: 9.46666667rem;
+  margin: 0 auto;
+}
+.container ul li {
+  height: 1.61333333rem;
+  font-size: 0.48rem;
+  color: #656565;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  border-bottom: 1px solid #f6f6f6;
+}
+.container ul li span:nth-child(1) {
+  display: inline-block;
+  width: 0.70666667rem;
+  margin-right: 0.4rem;
+  margin-top: 0.13333333rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container ul li span:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+}
+.container ul li span:nth-child(2) {
+  width: 2rem;
+  margin-right: 0.4rem;
+}
+.container ul li span:nth-child(3) {
+  margin-right: 1.06666667rem;
+}
+.container ul li .freeCard {
+  color: #ff5a01;
+}
+.container ul li .payCard {
+  color: #ffb706;
+}
+.container .img-box p {
+  margin: auto;
+  color: #656565;
+  font-size: 0.48rem;
+}
+body {
+  background: #f6f6f6 !important;
+}
